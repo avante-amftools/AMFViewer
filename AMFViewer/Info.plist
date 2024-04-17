@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Stereolithography File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.avante-technology.uti.stl</string>
+			</array>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>stl</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Additive Manufacturing File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.avante-technology.uti.amf</string>
+			</array>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>amf</string>
+			</array>
+		</dict>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Additive Manufacturing File</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.avante-technology.uti.amf</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>amf</string>
+				</array>
+			</dict>
+			<key>UTTypeIcons</key>
+			<dict>
+				<key>UTTypeIconBackgroundName</key>
+				<string>ToolbarAdvanced</string>
+				<key>UTTypeIconBadgeName</key>
+				<string>Document</string>
+				<key>UTTypeIconText</key>
+				<string>AMF</string>
+			</dict>
+		</dict>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Stereolithography File</string>
+			<key>UTTypeIdentifier</key>
+			<string>public.standard-tesselated-geometry-format</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.3d-content</string>
+				<string>public.content</string>
+				<string>public.data</string>
+				<string>public.item</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/sla</string>
+				</array>
+				<key>com.apple.ostype</key>
+				<array>
+					<string>stl</string>
+				</array>
+			</dict>
+			<key>UTTypeIcons</key>
+			<dict>
+				<key>UTTypeIconBackgroundName</key>
+				<string>ToolbarAdvanced</string>
+				<key>UTTypeIconText</key>
+				<string>STL</string>
+				<key>UTTypeIconBadgeName</key>
+				<string>Document</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050CD2942B671DB50093B040 /* Arcball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD28D2B671DB50093B040 /* Arcball.swift */; };
+		050CD2952B671DB50093B040 /* CameraViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD28E2B671DB50093B040 /* CameraViewRepresentable.swift */; };
+		050CD2962B671DB50093B040 /* RealityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD28F2B671DB50093B040 /* RealityModel.swift */; };
+		050CD2972B671DB50093B040 /* SIMD+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD2902B671DB50093B040 /* SIMD+Extensions.swift */; };
+		050CD2982B671DB50093B040 /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD2912B671DB50093B040 /* RealityView.swift */; };
+		050CD2992B671DB50093B040 /* UnrealityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD2922B671DB50093B040 /* UnrealityModel.swift */; };
+		050CD29A2B671DB50093B040 /* CameraARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050CD2932B671DB50093B040 /* CameraARView.swift */; };
+		054905462A984D3500768D50 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 054905452A984D3500768D50 /* ToDo.txt */; };
+		055426252A7DE9DA00E678D1 /* DetailGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055426242A7DE9DA00E678D1 /* DetailGroupsView.swift */; };
+		055426382A85D32800E678D1 /* AttributeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055426372A85D32800E678D1 /* AttributeDetailView.swift */; };
+		0554263A2A85D34400E678D1 /* ColorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055426392A85D34400E678D1 /* ColorDetailView.swift */; };
+		0554263D2A85D35F00E678D1 /* MetadataDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554263C2A85D35F00E678D1 /* MetadataDetailView.swift */; };
+		0576D5FD2AF01EAF004CF71C /* OutlineView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0576D5FC2AF01EAF004CF71C /* OutlineView.strings */; };
+		058D82442A43D19B00808063 /* AMFViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058D82432A43D19B00808063 /* AMFViewerApp.swift */; };
+		058D82462A43D19B00808063 /* AMFViewerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058D82452A43D19B00808063 /* AMFViewerDocument.swift */; };
+		058D82482A43D19B00808063 /* AMFDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058D82472A43D19B00808063 /* AMFDocumentView.swift */; };
+		058D824A2A43D19C00808063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058D82492A43D19C00808063 /* Assets.xcassets */; };
+		058D824D2A43D19C00808063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058D824C2A43D19C00808063 /* Preview Assets.xcassets */; };
+		058D826F2A43D6BF00808063 /* Background.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 058D826D2A43D6BF00808063 /* Background.skybox */; };
+		058D82702A43D6BF00808063 /* Lighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 058D826E2A43D6BF00808063 /* Lighting.skybox */; };
+		058D82A22A44102800808063 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 058D82A12A44102800808063 /* Collections */; };
+		058D82A42A44102800808063 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 058D82A32A44102800808063 /* DequeModule */; };
+		058D82A62A44102800808063 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 058D82A52A44102800808063 /* OrderedCollections */; };
+		058D82C82A44147100808063 /* libAMFWrapped.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82BE2A44130600808063 /* libAMFWrapped.a */; };
+		058D82CA2A44149800808063 /* libAMFCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82C92A44149800808063 /* libAMFCore.a */; };
+		058D82CC2A4414A700808063 /* libminizip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82CB2A4414A700808063 /* libminizip.a */; };
+		058D82CE2A4414A700808063 /* libtinyxml2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82CD2A4414A700808063 /* libtinyxml2.a */; };
+		058D82D02A4414A700808063 /* libzipwrapped.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82CF2A4414A700808063 /* libzipwrapped.a */; };
+		058D82D22A4414CD00808063 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82D12A4414CD00808063 /* libc++.tbd */; };
+		058D82D42A4414D700808063 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82D32A4414D700808063 /* libiconv.tbd */; };
+		058D82D62A4414E900808063 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D82D52A4414E900808063 /* libbz2.tbd */; };
+		058D82D82A46535B00808063 /* FrameOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058D82D72A46535B00808063 /* FrameOverlay.swift */; };
+		05B71BA22A6641F7007475C8 /* SIMDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B71BA12A6641F7007475C8 /* SIMDExtensions.swift */; };
+		05B71BA62A7053BE007475C8 /* AMFNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B71BA52A7053BE007475C8 /* AMFNode.swift */; };
+		05B71BA82A7053D0007475C8 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B71BA72A7053D0007475C8 /* Detail.swift */; };
+		05B71BAA2A72EEAC007475C8 /* RealityKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B71BA92A72EEAC007475C8 /* RealityKitRenderer.swift */; };
+		05B71BAD2A72F551007475C8 /* TriColorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B71BAC2A72F551007475C8 /* TriColorMap.swift */; };
+		05B71BAF2A72F584007475C8 /* MixedVertexMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B71BAE2A72F584007475C8 /* MixedVertexMap.swift */; };
+		05BEF3022A473A37002926D6 /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF3012A473A37002926D6 /* OutlineView.swift */; };
+		05BEF3072A4CEBDC002926D6 /* CGImage_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF3062A4CEBDC002926D6 /* CGImage_Extension.swift */; };
+		05C234B02AEA152000CA7C66 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C234AF2AEA152000CA7C66 /* PreferencesView.swift */; };
+		05C234B42AEA22CD00CA7C66 /* OtherPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C234B32AEA22CD00CA7C66 /* OtherPreferencesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		058D82BD2A44130600808063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 058D82B52A44130600808063 /* AMFWrapped.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 055F1C9C29BEB0220004F966;
+			remoteInfo = AMFWrapped;
+		};
+		058D82BF2A44131E00808063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 058D82B52A44130600808063 /* AMFWrapped.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 055F1C9B29BEB0220004F966;
+			remoteInfo = AMFWrapped;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050CD28D2B671DB50093B040 /* Arcball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arcball.swift; sourceTree = "<group>"; };
+		050CD28E2B671DB50093B040 /* CameraViewRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewRepresentable.swift; sourceTree = "<group>"; };
+		050CD28F2B671DB50093B040 /* RealityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealityModel.swift; sourceTree = "<group>"; };
+		050CD2902B671DB50093B040 /* SIMD+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SIMD+Extensions.swift"; sourceTree = "<group>"; };
+		050CD2912B671DB50093B040 /* RealityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealityView.swift; sourceTree = "<group>"; };
+		050CD2922B671DB50093B040 /* UnrealityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnrealityModel.swift; sourceTree = "<group>"; };
+		050CD2932B671DB50093B040 /* CameraARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraARView.swift; sourceTree = "<group>"; };
+		054263FA2BCF5C7000F35189 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		054263FB2BCF5C8300F35189 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		054263FC2BCF5CA800F35189 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		054550D42B53588100E95D91 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		054550D52B53588100E95D91 /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		054550D62B53588100E95D91 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		054550D72B53588100E95D91 /* arcball_paper.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = arcball_paper.pdf; sourceTree = "<group>"; };
+		054550D82B53588100E95D91 /* rubik.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = rubik.vs; sourceTree = "<group>"; };
+		054550D92B53588100E95D91 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		054550DA2B53588100E95D91 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		054550DB2B53588100E95D91 /* rubik.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = rubik.fs; sourceTree = "<group>"; };
+		054550DC2B53588100E95D91 /* stb_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
+		054550DD2B53588100E95D91 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		054550DE2B53588100E95D91 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		054905452A984D3500768D50 /* ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
+		055426242A7DE9DA00E678D1 /* DetailGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGroupsView.swift; sourceTree = "<group>"; };
+		055426282A7EC64800E678D1 /* Bugs.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bugs.txt; sourceTree = "<group>"; };
+		055426372A85D32800E678D1 /* AttributeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeDetailView.swift; sourceTree = "<group>"; };
+		055426392A85D34400E678D1 /* ColorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailView.swift; sourceTree = "<group>"; };
+		0554263C2A85D35F00E678D1 /* MetadataDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataDetailView.swift; sourceTree = "<group>"; };
+		0576D5FC2AF01EAF004CF71C /* OutlineView.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = OutlineView.strings; sourceTree = "<group>"; };
+		058D82402A43D19B00808063 /* AMFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		058D82432A43D19B00808063 /* AMFViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFViewerApp.swift; sourceTree = "<group>"; };
+		058D82452A43D19B00808063 /* AMFViewerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFViewerDocument.swift; sourceTree = "<group>"; };
+		058D82472A43D19B00808063 /* AMFDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFDocumentView.swift; sourceTree = "<group>"; };
+		058D82492A43D19C00808063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		058D824C2A43D19C00808063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		058D824E2A43D19C00808063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		058D824F2A43D19C00808063 /* AMFViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AMFViewer.entitlements; sourceTree = "<group>"; };
+		058D826D2A43D6BF00808063 /* Background.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Background.skybox; sourceTree = "<group>"; };
+		058D826E2A43D6BF00808063 /* Lighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = Lighting.skybox; sourceTree = "<group>"; };
+		058D82A92A4411A700808063 /* AMFViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMFViewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		058D82B52A44130600808063 /* AMFWrapped.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AMFWrapped.xcodeproj; path = ../AMFWrapped/AMFWrapped.xcodeproj; sourceTree = "<group>"; };
+		058D82C92A44149800808063 /* libAMFCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAMFCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		058D82CB2A4414A700808063 /* libminizip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libminizip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		058D82CD2A4414A700808063 /* libtinyxml2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtinyxml2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		058D82CF2A4414A700808063 /* libzipwrapped.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libzipwrapped.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		058D82D12A4414CD00808063 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		058D82D32A4414D700808063 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		058D82D52A4414E900808063 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		058D82D72A46535B00808063 /* FrameOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameOverlay.swift; sourceTree = "<group>"; };
+		05B71BA02A624C30007475C8 /* Debug.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Debug.txt; sourceTree = "<group>"; };
+		05B71BA12A6641F7007475C8 /* SIMDExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMDExtensions.swift; sourceTree = "<group>"; };
+		05B71BA52A7053BE007475C8 /* AMFNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFNode.swift; sourceTree = "<group>"; };
+		05B71BA72A7053D0007475C8 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		05B71BA92A72EEAC007475C8 /* RealityKitRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitRenderer.swift; sourceTree = "<group>"; };
+		05B71BAC2A72F551007475C8 /* TriColorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriColorMap.swift; sourceTree = "<group>"; };
+		05B71BAE2A72F584007475C8 /* MixedVertexMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedVertexMap.swift; sourceTree = "<group>"; };
+		05BEF3012A473A37002926D6 /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		05BEF3062A4CEBDC002926D6 /* CGImage_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImage_Extension.swift; sourceTree = "<group>"; };
+		05C234AF2AEA152000CA7C66 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		05C234B32AEA22CD00CA7C66 /* OtherPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPreferencesView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		058D823D2A43D19B00808063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058D82D62A4414E900808063 /* libbz2.tbd in Frameworks */,
+				058D82D42A4414D700808063 /* libiconv.tbd in Frameworks */,
+				058D82D22A4414CD00808063 /* libc++.tbd in Frameworks */,
+				058D82CC2A4414A700808063 /* libminizip.a in Frameworks */,
+				058D82CE2A4414A700808063 /* libtinyxml2.a in Frameworks */,
+				058D82D02A4414A700808063 /* libzipwrapped.a in Frameworks */,
+				058D82CA2A44149800808063 /* libAMFCore.a in Frameworks */,
+				058D82C82A44147100808063 /* libAMFWrapped.a in Frameworks */,
+				058D82A22A44102800808063 /* Collections in Frameworks */,
+				058D82A42A44102800808063 /* DequeModule in Frameworks */,
+				058D82A62A44102800808063 /* OrderedCollections in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		054550D32B53588100E95D91 /* ArcballCamera-main */ = {
+			isa = PBXGroup;
+			children = (
+				054550D42B53588100E95D91 /* index.html */,
+				054550D52B53588100E95D91 /* shader.h */,
+				054550D62B53588100E95D91 /* CMakeLists.txt */,
+				054550D72B53588100E95D91 /* arcball_paper.pdf */,
+				054550D82B53588100E95D91 /* rubik.vs */,
+				054550D92B53588100E95D91 /* shader.cpp */,
+				054550DA2B53588100E95D91 /* stb_image.h */,
+				054550DB2B53588100E95D91 /* rubik.fs */,
+				054550DC2B53588100E95D91 /* stb_image.cpp */,
+				054550DD2B53588100E95D91 /* README.txt */,
+				054550DE2B53588100E95D91 /* main.cpp */,
+			);
+			path = "ArcballCamera-main";
+			sourceTree = "<group>";
+		};
+		058D82372A43D19B00808063 = {
+			isa = PBXGroup;
+			children = (
+				054263FA2BCF5C7000F35189 /* .gitignore */,
+				054263FB2BCF5C8300F35189 /* README.md */,
+				054263FC2BCF5CA800F35189 /* LICENSE.md */,
+				054550D32B53588100E95D91 /* ArcballCamera-main */,
+				058D82422A43D19B00808063 /* AMFViewer */,
+				058D82B52A44130600808063 /* AMFWrapped.xcodeproj */,
+				058D82412A43D19B00808063 /* Products */,
+				058D82C72A44147100808063 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		058D82412A43D19B00808063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				058D82402A43D19B00808063 /* AMFViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		058D82422A43D19B00808063 /* AMFViewer */ = {
+			isa = PBXGroup;
+			children = (
+				054905452A984D3500768D50 /* ToDo.txt */,
+				055426282A7EC64800E678D1 /* Bugs.txt */,
+				05B71BA02A624C30007475C8 /* Debug.txt */,
+				058D82602A43D21400808063 /* Application */,
+				058D825E2A43D1FA00808063 /* Document */,
+				058D825B2A43D1D500808063 /* GraphicView */,
+				058D825C2A43D1E800808063 /* OutlineView */,
+				058D825D2A43D1EF00808063 /* MetadataView */,
+				05C234AE2AEA14FA00CA7C66 /* PreferencesView */,
+				058D82612A43D21E00808063 /* Utility */,
+				058D824B2A43D19C00808063 /* Preview Content */,
+				058D82492A43D19C00808063 /* Assets.xcassets */,
+				058D824E2A43D19C00808063 /* Info.plist */,
+				058D824F2A43D19C00808063 /* AMFViewer.entitlements */,
+				058D82A92A4411A700808063 /* AMFViewer-Bridging-Header.h */,
+			);
+			path = AMFViewer;
+			sourceTree = "<group>";
+		};
+		058D824B2A43D19C00808063 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				058D824C2A43D19C00808063 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		058D825B2A43D1D500808063 /* GraphicView */ = {
+			isa = PBXGroup;
+			children = (
+				050CD28D2B671DB50093B040 /* Arcball.swift */,
+				050CD2932B671DB50093B040 /* CameraARView.swift */,
+				050CD28E2B671DB50093B040 /* CameraViewRepresentable.swift */,
+				050CD28F2B671DB50093B040 /* RealityModel.swift */,
+				050CD2912B671DB50093B040 /* RealityView.swift */,
+				050CD2902B671DB50093B040 /* SIMD+Extensions.swift */,
+				050CD2922B671DB50093B040 /* UnrealityModel.swift */,
+				058D826D2A43D6BF00808063 /* Background.skybox */,
+				058D826E2A43D6BF00808063 /* Lighting.skybox */,
+			);
+			path = GraphicView;
+			sourceTree = "<group>";
+		};
+		058D825C2A43D1E800808063 /* OutlineView */ = {
+			isa = PBXGroup;
+			children = (
+				05BEF3012A473A37002926D6 /* OutlineView.swift */,
+				0576D5FC2AF01EAF004CF71C /* OutlineView.strings */,
+			);
+			path = OutlineView;
+			sourceTree = "<group>";
+		};
+		058D825D2A43D1EF00808063 /* MetadataView */ = {
+			isa = PBXGroup;
+			children = (
+				055426242A7DE9DA00E678D1 /* DetailGroupsView.swift */,
+				055426372A85D32800E678D1 /* AttributeDetailView.swift */,
+				055426392A85D34400E678D1 /* ColorDetailView.swift */,
+				0554263C2A85D35F00E678D1 /* MetadataDetailView.swift */,
+			);
+			path = MetadataView;
+			sourceTree = "<group>";
+		};
+		058D825E2A43D1FA00808063 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				05B71BAB2A72EF91007475C8 /* Render */,
+				058D82622A43D28400808063 /* Model */,
+				058D82452A43D19B00808063 /* AMFViewerDocument.swift */,
+				058D82472A43D19B00808063 /* AMFDocumentView.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		058D82602A43D21400808063 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				058D82432A43D19B00808063 /* AMFViewerApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		058D82612A43D21E00808063 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				058D82D72A46535B00808063 /* FrameOverlay.swift */,
+				05BEF3062A4CEBDC002926D6 /* CGImage_Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		058D82622A43D28400808063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05B71BA72A7053D0007475C8 /* Detail.swift */,
+				05B71BA52A7053BE007475C8 /* AMFNode.swift */,
+				05B71BA12A6641F7007475C8 /* SIMDExtensions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		058D82B62A44130600808063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				058D82BE2A44130600808063 /* libAMFWrapped.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		058D82C72A44147100808063 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				058D82D52A4414E900808063 /* libbz2.tbd */,
+				058D82D32A4414D700808063 /* libiconv.tbd */,
+				058D82D12A4414CD00808063 /* libc++.tbd */,
+				058D82CB2A4414A700808063 /* libminizip.a */,
+				058D82CD2A4414A700808063 /* libtinyxml2.a */,
+				058D82CF2A4414A700808063 /* libzipwrapped.a */,
+				058D82C92A44149800808063 /* libAMFCore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05B71BAB2A72EF91007475C8 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				05B71BA92A72EEAC007475C8 /* RealityKitRenderer.swift */,
+				05B71BAC2A72F551007475C8 /* TriColorMap.swift */,
+				05B71BAE2A72F584007475C8 /* MixedVertexMap.swift */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		05C234AE2AEA14FA00CA7C66 /* PreferencesView */ = {
+			isa = PBXGroup;
+			children = (
+				05C234AF2AEA152000CA7C66 /* PreferencesView.swift */,
+				05C234B32AEA22CD00CA7C66 /* OtherPreferencesView.swift */,
+			);
+			path = PreferencesView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		058D823F2A43D19B00808063 /* AMFViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 058D82522A43D19C00808063 /* Build configuration list for PBXNativeTarget "AMFViewer" */;
+			buildPhases = (
+				058D823C2A43D19B00808063 /* Sources */,
+				058D823D2A43D19B00808063 /* Frameworks */,
+				058D823E2A43D19B00808063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				058D82C02A44131E00808063 /* PBXTargetDependency */,
+			);
+			name = AMFViewer;
+			packageProductDependencies = (
+				058D82A12A44102800808063 /* Collections */,
+				058D82A32A44102800808063 /* DequeModule */,
+				058D82A52A44102800808063 /* OrderedCollections */,
+			);
+			productName = AMFViewer;
+			productReference = 058D82402A43D19B00808063 /* AMFViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		058D82382A43D19B00808063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					058D823F2A43D19B00808063 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 058D823B2A43D19B00808063 /* Build configuration list for PBXProject "AMFViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 058D82372A43D19B00808063;
+			packageReferences = (
+				058D82A02A44102800808063 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = 058D82412A43D19B00808063 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 058D82B62A44130600808063 /* Products */;
+					ProjectRef = 058D82B52A44130600808063 /* AMFWrapped.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				058D823F2A43D19B00808063 /* AMFViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		058D82BE2A44130600808063 /* libAMFWrapped.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAMFWrapped.a;
+			remoteRef = 058D82BD2A44130600808063 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		058D823E2A43D19B00808063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0576D5FD2AF01EAF004CF71C /* OutlineView.strings in Resources */,
+				054905462A984D3500768D50 /* ToDo.txt in Resources */,
+				058D826F2A43D6BF00808063 /* Background.skybox in Resources */,
+				058D824D2A43D19C00808063 /* Preview Assets.xcassets in Resources */,
+				058D824A2A43D19C00808063 /* Assets.xcassets in Resources */,
+				058D82702A43D6BF00808063 /* Lighting.skybox in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		058D823C2A43D19B00808063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B71BA62A7053BE007475C8 /* AMFNode.swift in Sources */,
+				05B71BAD2A72F551007475C8 /* TriColorMap.swift in Sources */,
+				050CD2972B671DB50093B040 /* SIMD+Extensions.swift in Sources */,
+				050CD29A2B671DB50093B040 /* CameraARView.swift in Sources */,
+				050CD2982B671DB50093B040 /* RealityView.swift in Sources */,
+				058D82442A43D19B00808063 /* AMFViewerApp.swift in Sources */,
+				055426382A85D32800E678D1 /* AttributeDetailView.swift in Sources */,
+				050CD2952B671DB50093B040 /* CameraViewRepresentable.swift in Sources */,
+				050CD2942B671DB50093B040 /* Arcball.swift in Sources */,
+				05C234B02AEA152000CA7C66 /* PreferencesView.swift in Sources */,
+				05BEF3022A473A37002926D6 /* OutlineView.swift in Sources */,
+				058D82462A43D19B00808063 /* AMFViewerDocument.swift in Sources */,
+				0554263A2A85D34400E678D1 /* ColorDetailView.swift in Sources */,
+				05B71BAA2A72EEAC007475C8 /* RealityKitRenderer.swift in Sources */,
+				05B71BAF2A72F584007475C8 /* MixedVertexMap.swift in Sources */,
+				058D82D82A46535B00808063 /* FrameOverlay.swift in Sources */,
+				050CD2962B671DB50093B040 /* RealityModel.swift in Sources */,
+				055426252A7DE9DA00E678D1 /* DetailGroupsView.swift in Sources */,
+				05B71BA82A7053D0007475C8 /* Detail.swift in Sources */,
+				05C234B42AEA22CD00CA7C66 /* OtherPreferencesView.swift in Sources */,
+				0554263D2A85D35F00E678D1 /* MetadataDetailView.swift in Sources */,
+				05B71BA22A6641F7007475C8 /* SIMDExtensions.swift in Sources */,
+				050CD2992B671DB50093B040 /* UnrealityModel.swift in Sources */,
+				058D82482A43D19B00808063 /* AMFDocumentView.swift in Sources */,
+				05BEF3072A4CEBDC002926D6 /* CGImage_Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		058D82C02A44131E00808063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMFWrapped;
+			targetProxy = 058D82BF2A44131E00808063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		058D82502A43D19C00808063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		058D82512A43D19C00808063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		058D82532A43D19C00808063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AMFViewer/AMFViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AMFViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = 6E8HN7533X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "../AMFWrapped/AMFWrapped/**";
+				INFOPLIST_FILE = AMFViewer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softarch.AMFViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AMFViewer/AMFViewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		058D82542A43D19C00808063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AMFViewer/AMFViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AMFViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = 6E8HN7533X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "../AMFWrapped/AMFWrapped/**";
+				INFOPLIST_FILE = AMFViewer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softarch.AMFViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AMFViewer/AMFViewer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		058D823B2A43D19B00808063 /* Build configuration list for PBXProject "AMFViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058D82502A43D19C00808063 /* Debug */,
+				058D82512A43D19C00808063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		058D82522A43D19C00808063 /* Build configuration list for PBXNativeTarget "AMFViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058D82532A43D19C00808063 /* Debug */,
+				058D82542A43D19C00808063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		058D82A02A44102800808063 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		058D82A12A44102800808063 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 058D82A02A44102800808063 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		058D82A32A44102800808063 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 058D82A02A44102800808063 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		058D82A52A44102800808063 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 058D82A02A44102800808063 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 058D82382A43D19B00808063 /* Project object */;
+}

@@ -1,0 +1,13 @@
+/* 
+  OutlineView.strings
+  AMFViewer
+
+  Created by Ron Aldrich on 10/30/23.
+  
+*/
+
+// The keyword for the root node in an AMF document is "amf".
+//  We want to label it is "Root" instead, because the our document
+//  can represent either AMF or STL.
+
+"amf" = "Root";

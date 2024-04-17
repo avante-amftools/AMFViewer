@@ -1,0 +1,8 @@
+AMF export (Compressed)
+STL export
+
+Surface texture
+Procedural material
+Constellations
+
+Text representation of color channels can be improved.
